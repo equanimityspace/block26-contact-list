@@ -28,26 +28,27 @@ export default function DisplayUser({ userId, setId }) {
         <div>
           <h1 onClick={() => setId(null)}>Contact List</h1>
           <h2>{user.name}</h2>
-          <p>{user.username}</p>
-          <p>{user.email}</p>
+          <p>Username: {user.username}</p>
+          <p>Email: {user.email}</p>
           <ul>
-            <li>{user.address.street}</li>
-            <li>{user.address.suite}</li>
-            <li>{user.address.city}</li>
-            <li>{user.address.zipcode}</li>
+            <li>Street: {user.address.street}</li>
+            <li>Suit: {user.address.suite}</li>
+            <li>City: {user.address.city}</li>
+            <li>Zip: {user.address.zipcode}</li>
             <li>
+              <br></br>
               <ul>
-                <li>{user.address.geo.lat}</li>
-                <li>{user.address.geo.lng}</li>
+                <li>Latitude: {user.address.geo.lat}</li>
+                <li>Longitude: {user.address.geo.lng}</li>
               </ul>
             </li>
           </ul>
-          <p>{user.phone}</p>
-          <p>{user.website}</p>
+          <p>Phone #: {user.phone}</p>
+          <p>Website: {user.website}</p>
+          <p>Company Name: {user.company.name}</p>
           <ul>
-            <li>{user.company.name}</li>
-            <li>{user.company.catchPhrase}</li>
-            <li>{user.company.bs}</li>
+            <li>Slogan: {user.company.catchPhrase}</li>
+            <li>Tags: {user.company.bs}</li>
           </ul>
         </div>
       )}
