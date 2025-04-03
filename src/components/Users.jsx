@@ -26,7 +26,7 @@ export default function FetchUsers({ setId }) {
   // display data
   return (
     <>
-      <h2 class="contactList">Contact List</h2>
+      <h2 className="contactList">Contact List</h2>
       <table>
         <thead>
           <tr>
@@ -40,7 +40,7 @@ export default function FetchUsers({ setId }) {
             users.map((user) => {
               return (
                 <tr
-                  id={user.id}
+                  key={user.id}
                   onClick={() => {
                     setId(user.id);
                   }}
