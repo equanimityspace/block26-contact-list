@@ -1,6 +1,6 @@
 import { useState } from "react";
-import FetchUsers from "./components/Users";
-import DisplayUser from "./components/User";
+import FetchUsers from "./components/FetchUsers";
+import DisplayUser from "./components/DisplayUser";
 
 import "./App.css";
 
