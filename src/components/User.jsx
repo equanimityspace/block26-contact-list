@@ -36,6 +36,7 @@ export default function DisplayUser({ userId, setId }) {
             <li>City: {user.address.city}</li>
             <li>Zip: {user.address.zipcode}</li>
             <li>
+              Coordinates:
               <br></br>
               <ul>
                 <li>Latitude: {user.address.geo.lat}</li>
