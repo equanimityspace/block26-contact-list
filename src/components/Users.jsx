@@ -26,7 +26,7 @@ export default function FetchUsers({ setId }) {
   // display data
   return (
     <>
-      <h2>Contact List</h2>
+      <h2 class="contactList">Contact List</h2>
       <table>
         <thead>
           <tr>
